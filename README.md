@@ -36,12 +36,13 @@ Welcome to the Job Portal! This project is a job board platform where users can 
 
 To get a local copy up and running, follow these steps:
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/jonofficial/Job_Portal.git
-    cd Job_Portal
-    code .
-    ```
+Clone the repository:
+
+ ```bash
+ git clone https://github.com/jonofficial/Job_Portal.git
+ cd Job_Portal
+ code .
+ ```
 
 ### Frontend Setup
 
@@ -57,7 +58,8 @@ npm run dev
 
 Navigate to the backend folder and start the development server:
 
-```cd backend
+```bash
+cd backend
 npm install
 nodemon index.js
 ```
@@ -84,12 +86,12 @@ nodemon index.js
 - Create a `.env` file in the `backend` folder with the following environment variables:
 
     ```plaintext
-    MONGO_URI="your_mongo_URI"
-    PORT=any_number
-    SECRET_KEY="your_secret_key"
-    CLOUD_NAME="your_cloudinary_name"
-    API_KEY="your_cloudinary_api_key"
-    API_SECRET="your_cloudinary_api_secret"
+    MONGO_URI= "your_mongo_URI"
+    PORT= any_port_number
+    SECRET_KEY= "your_secret_key"
+    CLOUD_NAME= "your_cloudinary_name"
+    API_KEY= "your_cloudinary_api_key"
+    API_SECRET= "your_cloudinary_api_secret"
     ```
 
 Replace the placeholders with your actual credentials.
