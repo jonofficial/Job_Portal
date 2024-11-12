@@ -12,6 +12,7 @@ services:
       - app-network
     depends_on:
       - backend  # Wait for the backend service to be ready
+    restart: always  # Ensure the frontend service always restarts
 
   backend:
     build:
@@ -22,6 +23,7 @@ services:
       - "8000:8000"  # Expose backend port
     networks:
       - app-network
+    restart: always  # Ensure the backend service always restarts
 
 networks:
   app-network:
